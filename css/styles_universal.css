@@ -1,0 +1,144 @@
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Keyframes – Wiggling Button*/
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+/* for the side bar */
+
+/* Set the width and color of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: none;
+  opacity: 0;
+  margin-right: 20px; /* Add a margin on the right side of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #747d8c;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+.bounce-text {
+  display: inline-block;
+  opacity: 0;
+  animation: fade-bounce 2s ease-in-out forwards;
+  transform-origin: bottom;
+}
+
+@keyframes fade-bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scaleY(1);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-50px) scaleY(1.2);
+  }
+  60% {
+    transform: translateY(0) scaleY(0.8);
+  }
+  80% {
+    transform: translateY(-15px) scaleY(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+
+
+
+
+/* Header and Navbar */
+
+
+header {
+  padding-block: 5vh;
+  padding-inline: 5vh;
+
+  background-color: white;
+
+}
+
+.bg-light{
+  background-color:white !important;
+}
+
+.navbar-nav {
+  background-color: white;
+  
+}
+
+.nav-item {
+  margin-left: 2vh;
+  font-size: 1.35em;
+}
+
+.navbar-brand {
+  font-size: clamp(2em, 3vw, 4em);
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.10em;
+}
+

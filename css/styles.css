@@ -1,0 +1,215 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #ced6e0;
+	font-size: 16px;
+	font-family: 'Arial', sans-serif;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+section{
+	border: 2px solid white;
+
+
+
+
+}
+article {
+	font-family: 'helvetica';
+	border: 2px solid white;
+	display: block;
+
+}
+
+p {
+	font-size: 1.5em;
+	margin-block: 3vh;
+	line-height: 2;
+}
+
+/* link sub */
+a {
+	transition: transform 0.3s ease-in-out !important;
+}
+
+
+a:hover {
+	text-decoration: none;
+	transform: scale(1.2);
+}
+
+
+/* link sub */
+
+
+
+
+
+
+/* This is EXTREMELY IMPORTANT, DEFINES THE MARGINS FOR THE NAVBAR AND ENTIRE HTML */
+div.container {
+	margin-inline: ;
+	max-width: 100%;
+
+}
+
+
+
+
+/* Intro */
+
+.intro-content {
+	display: flex;
+	margin-block: 10vh;
+	margin-inline: 10vh;
+	height: auto;
+	min-height: 69.5vh;
+
+}
+
+.button-link {
+	display: inline-block; /* DON'T FORGET THIS!!!! */
+	background-color: white;
+	color: black;
+	padding-block: 0.5vh;
+	padding-inline: 2vh;
+	border-radius: 0.75vh;
+	margin-inline: 0.5vh;
+	margin-block: 10px;
+
+
+
+}
+
+.button-link:hover {
+	animation: wiggle 2s linear;
+	color: black;
+}
+
+.intro-article {
+	display: block;
+	max-width: 90%;
+}
+
+
+.scroll-link {
+  display: inline-block;
+  float: right;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.scroll-link:hover {
+  transform: scale(1.2);
+}
+
+.scroll-special {
+	display: flex;
+	justify-content: end;
+	margin-block: 0vh;
+
+	font-weight: lighter;
+		font-family: 'avenir';
+
+}
+
+.jumbo-text {
+	font-size: 11vw ;
+	color: white;
+	margin-top: 5vh;
+	font-family: 'Open sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+/* Main content*/
+
+.main-content {
+	margin-inline: 10vh;
+	margin-block: 10vh;
+	max-width: 75%;
+	background-color: #A5A6AA;
+	border-radius: 5vh;
+
+
+}
+
+.main-content:fullscreen{
+
+}
+
+
+
+
+
+
+/* timeline */
+
+.timeline {
+	display: block;
+	flex-direction: column;
+	
+	
+  opacity: 0;
+
+}
+
+.event {
+	display: block;
+	align-items: center;
+  opacity: 0;
+  transition: opacity 1s, transform 0.1s ease-in-out;
+
+  background-color: white;
+  border-radius: 2vh;
+  padding-block: 2vh;
+  padding-inline: 5vh;
+  margin-block: 5vh;
+  max-width: 80vh;
+}
+
+.event:hover {
+	transform: scale(1.05);
+}
+
+
+
+
+.date {
+	display: inline-block;
+	float: right;
+	font-size: 1.25em;
+
+}
+
+.title {
+  display: inline-block;
+  font-size: 3vw;
+
+}
+  /* Change font size when .col-md-10 collapses */
+  @media (max-width: 767px) {
+    .title {
+      font-size: 30px;
+    }
+  }
+  
+
+
+
+
+
+
+
+

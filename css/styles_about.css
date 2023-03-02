@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+}
+
+
+article {
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+h1 {
+	font-size: clamp(4em, 3vw, 6em);
+
+	margin-block: 10vh;
+  font-weight: 300;
+
+	
+}
+
+
+
+h2 {
+  font-size: clamp(1.5em, 2vw, 3em);
+  font-weight: lighter;
+  margin-block: 10vh;
+  }
+
+
+/* This is EXTREMELY IMPORTANT, DEFINES THE MARGINS FOR THE NAVBAR AND ENTIRE HTML */
+div.container {
+	margin-inline: 0vh;
+	max-width: 100%;
+	
+
+}
+
+p {
+	font-size: 16px;
+
+}
+
+.content {
+	margin-left: 10vw;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .content {
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.timeline {
+	margin-top: vh;
+}
+
+
+.timeline-entry {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 85%;
+  max-width: ;
+  padding-bottom: 5vh;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: clamp(1.5em, 2vw, 2em);
+  font-weight: 300;
+
+
+
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top:;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-size: clamp(0.5em, 3vw, 1em);
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding-inline: 15px;
+  height: 25px;
+
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  margin-bottom: ;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: white;
+  margin-right: 2vh;
+  flex-shrink: 0;
+}
+
+
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 27.5px;
+  bottom: 40px;
+  border-left: 2px solid grey;
+  z-index: -1;
+}
+
+.text {
+	  font-size: clamp(1.25em, 2vw, 1.5em);
+	  font-family:;
+	  color: grey;
+	  font-weight: 300;
+    line-height: 1.75;
+
+}
