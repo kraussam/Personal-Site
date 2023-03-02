@@ -5,5 +5,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   setTimeout(() => {
     document.body.style.transition = 'opacity 0.5s ease-in-out';
     document.body.style.opacity = 1;
-  }, 100);
+  }, 1000);
 });
+
+// Set the opacity of the body to 1 after the animation is complete
+window.onload = function() {
+  document.body.classList.add('fade-in');
+  setTimeout(() => {
+    document.body.style.opacity = 1;
+  }, 500);
+};
