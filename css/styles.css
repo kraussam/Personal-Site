@@ -5,7 +5,7 @@
 
 body {
 	background-color: #ced6e0;
-	font-size: 16px;
+  font-size: calc(0.25rem + 0.35vw + 0.35vh);
 	font-family: 'Arial', sans-serif;
 }
 
@@ -120,14 +120,20 @@ div.container {
 }
 
 .jumbo-text {
-	font-size: 14vh ;
+	font-size: 15em ;
 	color: white;
 	margin-top: 5vh;
 	font-weight:;
 	font-family: 'Open sans', sans-serif;
 }
+
+.light {
+	font-weight: 300;
+}
+
+
 .large-text {
-	font-size: 10vw ;
+	font-size: 10em ;
 	color: white;
 	font-weight: 300;
 	margin-top: 5vh;
@@ -147,6 +153,7 @@ div.container {
 	margin-inline: 10vh;
 	margin-block: 10vh;
 	max-width: 75%;
+	min-height: 100vh;
 	background-color: #A5A6AA;
 	border-radius: 5vh;
 
