@@ -1,3 +1,7 @@
+html {
+  zoom: ;
+}
+
 
 .fade-in {
   animation-name: fade-in;
@@ -134,7 +138,7 @@ header {
 
 .nav-item {
   margin-left: 2vh;
-  font-size: 1.35em;
+  font-size: 1.15em;
 }
 
 .navbar-brand {
