@@ -18,11 +18,18 @@ h1 {
 	
 }
 
-
+body {
+  background-color: white;
+  font-size: calc(0.25rem + 0.35vw + 0.35vh);
+  color: ;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open sans" sans-serif;
+}
 
 h2 {
   font-size: clamp(1.5em, 2vw, 3em);
-  font-weight: lighter;
+  font-weight: 300;
   margin-block: 10vh;
   }
 
@@ -42,13 +49,6 @@ p {
 
 .content {
 	margin-left: 10vw;
-}
-
-
-@media only screen and (max-width: 480px) {
-  .content {
-    margin-left: 0;
-  }
 }
 
 
@@ -100,12 +100,13 @@ p {
   justify-content: flex-end;
   margin-top:;
   font-family: "Open Sans", sans-serif;
-  color: black;
+  color: white;
+  font-weight: 300;
   font-size: clamp(0.5em, 3vw, 1em);
-  background-color: lightgrey;
-  border-radius: 10px;
+  background-color: #a6abbd;
+  border-radius: 5px;
   padding-inline: 15px;
-  height: 25px;
+  height: 20px;
 
 }
 

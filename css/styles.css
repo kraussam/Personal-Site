@@ -6,7 +6,7 @@
 body {
 	background-color: #dcdde1;
   font-size: calc(0.25rem + 0.35vw + 0.35vh);
-	font-family: 'Arial', sans-serif;
+
 	color: ;
 	display: flex;
 	flex-direction: column;
@@ -15,6 +15,7 @@ body {
 h1 {
 	font-size: 5em;
 	color: black;
+	font-weight: 300;
 }
 
 section{
@@ -25,31 +26,18 @@ section{
 
 }
 article {
-	font-family: 'helvetica';
+	
 	border: 2px solid white;
 	display: block;
 
 }
 
 p {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin-block: 3vh;
 	line-height: 2;
+	font-weight: 300;
 }
-
-/* link sub */
-a {
-	transition: transform 0.3s ease-in-out !important;
-}
-
-
-a:hover {
-	text-decoration: none;
-	transform: scale(1.2);
-}
-
-
-/* link sub */
 
 
 
@@ -160,8 +148,8 @@ div.container {
 	justify-content: end;
 	margin-block: 0vh;
 
-	font-weight: lighter;
-		font-family: 'avenir';
+	font-weight: 300;
+		font-family: 'Avenir', sans-serif;
 
 }
 
@@ -170,7 +158,7 @@ div.container {
 	color: white;
 	margin-top: 5vh;
 	font-weight:;
-	font-family: 'Open sans', sans-serif;
+	
 }
 
 .light {
@@ -183,7 +171,7 @@ div.container {
 	color: white;
 	font-weight: 300;
 	margin-top: 5vh;
-	font-family: 'Open sans', sans-serif;
+	
 }
 
 
@@ -205,11 +193,6 @@ div.container {
 
 
 }
-
-.main-content:fullscreen{
-
-}
-
 
 
 
