@@ -4,13 +4,15 @@
 
 
 body {
-	background-color: #ced6e0;
+	background-color: #dcdde1;
   font-size: calc(0.25rem + 0.35vw + 0.35vh);
 	font-family: 'Arial', sans-serif;
+	color: ;
 }
 
 h1 {
 	font-size: 5em;
+	color: black;
 }
 
 section{
@@ -74,23 +76,65 @@ div.container {
 }
 
 .button-link {
-	display: inline-block; /* DON'T FORGET THIS!!!! */
-	background-color: white;
-	color: black;
-	padding-block: 0.5vh;
-	padding-inline: 2vh;
-	border-radius: 0.75vh;
-	margin-inline: 0.5vh;
-	margin-block: 10px;
-
-
-
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding-block: 0.5vh;
+  padding-inline: 2vh;
+  border-radius: 0.75vh;
+  margin-inline: 0.5vh;
+  margin-block: 10px;
+  transition: background-color 2.5s ease;
 }
 
 .button-link:hover {
-	animation: wiggle 2s linear;
-	color: black;
+  background-color: #f0e5e7;
+  color: black;
+  animation: wiggle 2.5s linear, fade 0.5s ease-in;
 }
+
+.button-link:not(:hover) {
+  animation: fade-out 0.5s ease-out;
+  animation-fill-mode: forwards;
+  background-color: white;
+}
+
+
+
+
+
+.button2-link {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding-block: 0.5vh;
+  padding-inline: 2vh;
+  border-radius: 0.75vh;
+  margin-inline: 0.5vh;
+  margin-block: 10px;
+  transition: background-color 2.5s ease;
+}
+
+.button2-link:hover {
+
+  background-color: #a6abbd;
+  color: white;
+  animation: wiggle 2.5s linear, fade2 0.5s ease-in;
+}
+
+.button2-link:not(:hover) {
+  animation: fade2-out 0.5s ease-out;
+  animation-fill-mode: forwards;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
 
 .intro-article {
 	display: block;
@@ -154,7 +198,7 @@ div.container {
 	margin-block: 10vh;
 	max-width: 75%;
 	min-height: 100vh;
-	background-color: #A5A6AA;
+	background-color: #A6ABBD;
 	border-radius: 5vh;
 
 

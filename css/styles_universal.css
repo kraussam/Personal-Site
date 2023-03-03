@@ -27,6 +27,51 @@ body {
 
 
 
+@keyframes fade {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #f0e5e7;
+
+  }
+}
+
+@keyframes fade-out {
+  from {
+    background-color: #f0e5e7;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+
+
+
+
+@keyframes fade2 {
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    background-color: #a6abbd;
+    color: white;
+
+  }
+}
+
+@keyframes fade2-out {
+  from {
+    background-color: #a6abbd;
+    color: white;
+  }
+  to {
+    background-color: white;
+    color: black;
+  }
+}
 
 
 
