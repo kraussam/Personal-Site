@@ -194,6 +194,18 @@ div.container {
 
 }
 
+@media screen and (min-width: 600px) {
+  .main-content {
+  max-width: 80%;
+  margin-inline: calc(1vh + 1vw) calc(1vh + 1vw);;
+	margin-block: 10vh;
+	max-width: ;
+	min-height: 100vh;
+	background-color: #A6ABBD;
+	border-radius: 5vh;
+  }
+}
+
 
 
 
