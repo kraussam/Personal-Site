@@ -26,7 +26,7 @@ body {
 
 /* link sub */
 a {
-  transition: transform 0.3s ease-in-out !important;
+  transition: transform 0.3s ease-in-out;
 }
 
 
@@ -118,7 +118,7 @@ a:hover {
 }
 
 
-/* for the side bar */
+
 
 /* Set the width and color of the scrollbar */
 ::-webkit-scrollbar {
@@ -209,4 +209,98 @@ header {
   font-weight: 300;
   letter-spacing: 0.10em;
 }
+
+
+/* Sidebar */
+
+
+
+
+.sidebar {
+ 
+  flex-direction: column;
+  background-color: white;
+  height: 200px;
+  width: 40px;
+  border-radius: 10px;
+
+ 
+  position: fixed;
+  left: 2%;
+  top: 40%
+
+
+
+}
+
+.sidebar-item {
+ margin-block: 15px;
+ width: auto;
+ display: flex;
+ justify-content: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    margin-inline: calc(5vh + 5vw) calc(5vh + 5vw);;
+
+  }
+ 
+}
+
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+ 
+}
+
+
+
+
+/* button */
+
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+  transform: none;
+  color: #373B44;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
 

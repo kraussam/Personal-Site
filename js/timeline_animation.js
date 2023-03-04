@@ -1,19 +1,26 @@
-const showTimelineBtn = document.getElementById('show-timeline');
+const timeline = document.querySelector('.timeline');
+const events = document.querySelectorAll('.event');
 
-showTimelineBtn.addEventListener('click', () => {
-  // Add a delay of 1 second before starting the timeline animation
-  setTimeout(() => {
-    const timeline = document.querySelector('.timeline');
-    const events = document.querySelectorAll('.event');
-
-    // Show the timeline
-    timeline.style.opacity = 1;
-
-    // Loop through each event and show them with a delay
-    events.forEach((event, index) => {
+const timelineObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // The #show-timeline element is visible in the viewport
+      // Show the timeline and events with a delay
       setTimeout(() => {
-        event.style.opacity = 1;
-      }, index * 1000);
-    });
-  }, 1000);
+        timeline.style.opacity = 1;
+        events.forEach((event, index) => {
+          setTimeout(() => {
+            event.style.opacity = 1;
+          }, index * 1000);
+        });
+      }, 1000);
+
+      // Stop observing the element
+      timelineObserver.unobserve(entry.target);
+    }
+  });
 });
+
+// Observe the #show-timeline element
+const showTimeline = document.getElementById('animation-fade');
+timelineObserver.observe(showTimeline);
