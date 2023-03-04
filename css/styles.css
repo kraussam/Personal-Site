@@ -187,7 +187,7 @@ div.container {
 /* Main content*/
 
 .main-content {
-	margin-inline: calc(1vh + 1vw) calc(1vh + 1vw);
+	margin-inline: calc(1vh + 1vw) calc(1vh + 1vw);;
 	margin-block: 10vh;
 	max-width: ;
 	min-height: 100vh;
@@ -271,7 +271,7 @@ div.container {
   
 .social-item {
 	margin-top: 10px;
-		margin-inline: calc(1vh + 1vw) calc(1vh + 1vw);
+	margin-inline: 20px;
 }
 
 
