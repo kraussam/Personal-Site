@@ -59,7 +59,8 @@ div.container {
 .intro-content {
 	display: flex;
 	margin-block: 10vh;
-	margin-inline: calc(1vh + 1vw) calc(1vh + 1vw);;
+	margin-inline: calc(1vh + 1vw) calc(1vh + 1vw);
+
 	height: auto;
 	min-height: 69.5vh;
 
@@ -81,6 +82,7 @@ div.container {
   background-color: #f0e5e7;
   color: black;
   animation: wiggle 2.5s linear, fade 0.5s ease-in;
+  transform: none;
 }
 
 .button-link:not(:hover) {
@@ -110,6 +112,7 @@ div.container {
   background-color: #a6abbd;
   color: white;
   animation: wiggle 2.5s linear, fade2 0.5s ease-in;
+  transform: none;
 }
 
 .button2-link:not(:hover) {
@@ -184,7 +187,7 @@ div.container {
 /* Main content*/
 
 .main-content {
-	margin-inline: calc(1vh + 1vw) calc(1vh + 1vw);;
+	margin-inline: calc(1vh + 1vw) calc(1vh + 1vw);
 	margin-block: 10vh;
 	max-width: ;
 	min-height: 100vh;
@@ -256,8 +259,20 @@ div.container {
       font-size: 30px;
     }
   }
-  
 
+ .socials {
+
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: right;
+ 	row align-items: center;
+ 	margin-bottom: 20px;
+ }
+  
+.social-item {
+	margin-top: 10px;
+		margin-inline: calc(1vh + 1vw) calc(1vh + 1vw);
+}
 
 
 
