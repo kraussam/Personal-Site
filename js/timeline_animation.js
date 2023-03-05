@@ -1,5 +1,5 @@
-const timeline = document.querySelector('.timeline');
-const events = document.querySelectorAll('.event');
+const timeline = document.querySelector('.desc');
+const events = document.querySelectorAll('.desc-item');
 
 const timelineObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {

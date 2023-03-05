@@ -79,16 +79,10 @@ div.container {
 }
 
 .button-link:hover {
-  background-color: #f0e5e7;
-  color: black;
-  animation: wiggle 2.5s linear, fade 0.5s ease-in;
-  transform: none;
-}
-
-.button-link:not(:hover) {
-  animation: fade-out 0.5s ease-out;
-  animation-fill-mode: forwards;
   background-color: white;
+  color: black;
+  animation: wiggle 2.5s linear;
+  transform: none;
 }
 
 
@@ -199,7 +193,7 @@ div.container {
 
 @media screen and (min-width: 600px) {
   .main-content {
-  	margin-inline: calc(5vh + 5vw) calc(5vh + 5vw);;
+  	margin-inline: calc(5vh + 5vw) calc(5vh + 5vw);
   }
 }
 
@@ -207,62 +201,24 @@ div.container {
 .desc-item {
 	color: white;
 	font-size: 1.75em;
+	flex-direction: column;
+	opacity: 0;
+	transition: opacity 1s, transform 0.1s ease-in-out;
 
+
+}
+
+.desc {
+	margin-block: calc(2vh + 2vw) calc(2vh + 2vw);
+	opacity: 0;
 }
 
 @media screen and (min-width: 600px) {
   .desc {
-  	max-width: 600px;
+  	max-width: 800px;
   }
 }
 
-
-
-/* timeline */
-
-.timeline {
-	display: block;
-	flex-direction: column;
-	
-	
-  opacity: 0;
-
-}
-
-.event {
-	display: block;
-	align-items: center;
-  opacity: 0;
-  transition: opacity 1s, transform 0.1s ease-in-out;
-
-
-  background-color: white;
-  border-radius: 2vh;
-  padding-block: 2vh;
-  padding-inline: 5vh;
-  margin-block: 5vh;
-  max-width: 80vh;
-}
-
-.event:hover {
-	transform: scale(1.05);
-}
-
-
-
-
-.date {
-	display: inline-block;
-	float: right;
-	font-size: 1.25em;
-
-}
-
-.title {
-  display: inline-block;
-  font-size: 3vw;
-
-}
   /* Change font size when .col-md-10 collapses */
   @media (max-width: 767px) {
     .title {
