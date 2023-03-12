@@ -39,7 +39,11 @@ p {
 	font-weight: 300;
 }
 
-
+@media screen and (max-width: 600px) {
+  p {
+  	font-size: 2em;
+  }
+}
 
 
 
@@ -220,6 +224,10 @@ div.container {
   	max-width: 800px;
   }
 }
+
+
+
+
 
 
 
