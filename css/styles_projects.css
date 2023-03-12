@@ -1,0 +1,31 @@
+.content-box {
+	background-color: lightgrey;
+	height: 400px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-bottom: 30px;
+
+	
+
+
+}
+
+.content-desc {
+	display: flex;
+	flex-direction: column;
+
+	margin-inline: 20px;
+	background-color: grey;
+}
+
+
+.content-desc:hover {
+
+}
+
+section {
+	margin-bottom: 2000px;
+}
+

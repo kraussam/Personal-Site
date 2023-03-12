@@ -47,10 +47,6 @@ p {
 
 }
 
-.content {
-	margin-left: 10vw;
-}
-
 
 
 
@@ -70,7 +66,7 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 85%;
+  width:;
   max-width: ;
   padding-bottom: 5vh;
 }
@@ -91,9 +87,13 @@ p {
   font-size: clamp(1.5em, 2vw, 2em);
   font-weight: 300;
 
-
-
 }
+
+.subtitle {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: darkgrey;
+  }
 
 .button {
   display: flex;
@@ -111,11 +111,12 @@ p {
 }
 
 .circle {
-  width: 25px;
-  height: 25px;
-  margin-bottom: ;
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+  margin-top: px;
   border-radius: 50%;
-  border: 3px solid black;
+  border: 2px solid grey;
   background-color: white;
   margin-right: 2vh;
   flex-shrink: 0;
@@ -125,15 +126,15 @@ p {
 .timeline-entry::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 27.5px;
+  top: 5px;
+  left: 24px;
   bottom: 40px;
-  border-left: 2px solid grey;
+  border-left: 1px solid lightgrey;
   z-index: -1;
 }
 
 .text {
-	  font-size: clamp(1em, 2vw, 1.25em);
+	  font-size: clamp(1.25em, 2vw, 1.35em);
 	  font-family:;
 	  color: grey;
 	  font-weight: 300;

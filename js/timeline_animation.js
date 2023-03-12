@@ -1,26 +1,25 @@
-const timeline = document.querySelector('.desc');
-const events = document.querySelectorAll('.desc-item');
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5 // trigger when half of the container is in view
+};
 
-const timelineObserver = new IntersectionObserver(entries => {
+const container = document.querySelector('.fade-container');
+const elementsToFadeIn = container.querySelectorAll('.fade-item');
+
+const myObserver = new IntersectionObserver((entries, myObserver) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // The #show-timeline element is visible in the viewport
-      // Show the timeline and events with a delay
-      setTimeout(() => {
-        timeline.style.opacity = 1;
-        events.forEach((event, index) => {
-          setTimeout(() => {
-            event.style.opacity = 1;
-          }, index * 1000);
-        });
-      }, 1000);
-
-      // Stop observing the element
-      timelineObserver.unobserve(entry.target);
+      let delayTime = 1000;
+      elementsToFadeIn.forEach((element, index) => {
+        setTimeout(() => {
+          element.style.opacity = 1;
+        }, delayTime);
+        delayTime += 1000;
+      });
+      myObserver.unobserve(entry.target);
     }
   });
-});
+}, options);
 
-// Observe the #show-timeline element
-const showTimeline = document.getElementById('animation-fade');
-timelineObserver.observe(showTimeline);
+myObserver.observe(container);
