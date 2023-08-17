@@ -10,7 +10,7 @@ article {
 
 }
 h1 {
-	font-size: clamp(4em, 3vw, 6em);
+
 
 	margin-block: 10vh;
   font-weight: 300;
@@ -20,7 +20,6 @@ h1 {
 
 body {
   background-color: white;
-  font-size: calc(0.25rem + 0.35vw + 0.35vh);
   color: ;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,7 @@ body {
 }
 
 h2 {
-  font-size: clamp(1.5em, 2vw, 3em);
+  font-size: 2em;
   font-weight: 300;
   margin-block: 10vh;
   }

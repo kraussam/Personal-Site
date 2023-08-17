@@ -3,31 +3,7 @@ html {
 }
 
 
-.fade-in {
-  animation-name: fade-in;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
 
-.fade-item {
-  opacity: 0;
-  transition: opacity 1s ease-in-out
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-
-body {
-  opacity: 0;
-}
 
 /* link sub */
 a {
@@ -43,82 +19,46 @@ a:hover {
 
 /* link sub */
 
-
-
-
-
-
-@keyframes fade {
-  from {
-    background-color: white;
-  }
-  to {
-    background-color: #f0e5e7;
-
-  }
+body {
+  font-size: calc(0.25rem + 0.35vw + 0.35vh);
 }
 
-@keyframes fade-out {
-  from {
-    background-color: #f0e5e7;
-  }
-  to {
-    background-color: white;
-  }
+.jumbo-text {
+  font-size: 15em ;
+  color: white;
+  margin-top: 5vh;
+  margin-bottom: ;
+  font-weight:;
+  
 }
 
 
-
-
-
-@keyframes fade2 {
-  from {
-    background-color: white;
-    color: black;
+@media screen and (max-width: 480px) {
+  body {
+      font-size: calc(0.5rem + 0.35vw + 0.35vh);
   }
-  to {
-    background-color: #a6abbd;
-    color: white;
 
-  }
-}
-
-@keyframes fade2-out {
-  from {
-    background-color: #a6abbd;
-    color: white;
-  }
-  to {
-    background-color: white;
-    color: black;
+  .jumbo-text {
+    font-size: 10em;
   }
 }
 
 
 
 
-/* Keyframes – Wiggling Button*/
-@keyframes wiggle {
-  0%, 7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%, 100% {
-    transform: rotateZ(0);
+
+
+.col-md-9 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 480px) {
+  .col-md-9 {
+    float: left;
+    width: 75%;
   }
 }
 
@@ -148,36 +88,6 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
-
-
-.bounce-text {
-  display: inline-block;
-  opacity: 0;
-  animation: fade-bounce 2s ease-in-out forwards;
-  transform-origin: bottom;
-}
-
-@keyframes fade-bounce {
-  0% {
-    opacity: 0;
-    transform: translateY(0) scaleY(1);
-  }
-  30% {
-    opacity: 1;
-    transform: translateY(-50px) scaleY(1.2);
-  }
-  60% {
-    transform: translateY(0) scaleY(0.8);
-  }
-  80% {
-    transform: translateY(-15px) scaleY(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scaleY(1);
-  }
-}
-
 
 
 
@@ -260,95 +170,6 @@ header {
     display: none;
   }
  
-}
-
-
-
-
-/* button */
-
-
-
-.button-89 {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #373B44;
-  
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  outline-offset: .6em;
-  font-size: 1.5em;
-
-  border: 0;
-
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-89:hover,
-
-.button-89:focus-visible{
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: .05em;
-  transform: none;
-  color: #373B44;
-}
-
-.button-89:active {
-  background: var(--color);
-  color: #fff;
-}
-
-
-
-.button-52 {
-  font-size: 0.25em;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  color: black;
-
-
-}
-
-.button-52:after {
-  content: "";
-  background-color: #ffe54c ;
-  width: 100%;
-  
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-  z-index: -1;
-}
-
-.button-52:hover:after {
-  top: 0px;
-  left: 0px;
-}
-
-@media (min-width: 768px) {
-  .button-52 {
-    padding: 13px 50px 13px;
-  }
 }
 
 

@@ -5,8 +5,6 @@
 
 body {
 	background-color: #dcdde1;
-  font-size: calc(0.25rem + 0.35vw + 0.35vh);
-
 	color: ;
 	display: flex;
 	flex-direction: column;
@@ -43,10 +41,9 @@ p {
 	max-width: 90%;
 
 }
+
 @media screen and (max-width: 600px) {
-  p {
-  	font-size: 2em;
-  }
+ 
   .width {
   	max-width: 100%;
   }
@@ -162,14 +159,6 @@ div.container {
 
 }
 
-.jumbo-text {
-	font-size: 15em ;
-	color: white;
-	margin-top: 5vh;
-	margin-bottom: ;
-	font-weight:;
-	
-}
 
 .light {
 	font-weight: 300;
