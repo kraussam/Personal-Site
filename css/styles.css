@@ -17,7 +17,7 @@ h1 {
 }
 
 section{
-	border: 2px solid white;
+	border: ; /* used to be 2px solid white same applies for most empty border entries */
 
 
 
@@ -25,7 +25,7 @@ section{
 }
 article {
 	
-	border: 2px solid white;
+	border:;
 	display: block;
 
 }
@@ -191,8 +191,7 @@ div.container {
 	margin-block: 10vh;
 	max-width: ;
 	min-height: 100vh;
-	background-color: #A6ABBD;
-	border-radius: 5vh;
+	background: linear-gradient(to bottom, transparent, #A6ABBD 10%, #A6ABBD 90%, transparent);
 
 
 }
@@ -225,10 +224,6 @@ div.container {
 
 
 
-
-
-
-
   /* Change font size when .col-md-10 collapses */
   @media (max-width: 767px) {
     .title {
@@ -248,6 +243,7 @@ div.container {
 .social-item {
 	margin-top: 10px;
 	margin-inline: 20px;
+	target="_blank"
 }
 
 
