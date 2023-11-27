@@ -2,16 +2,21 @@
     box-sizing: border-box;
 }
 
+.div {
+ background-color: white;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    background-color: ghostwhite;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
     flex: 33%;
-    max-width: 33%;
+    max-width: 35%; /* limited the 3rd column at 33% for some reason */
     padding: 0 4px;
 }
 
