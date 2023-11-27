@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 .div {
  background-color: white;
 }
@@ -10,13 +14,13 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-    background-color: ghostwhite;
+    background-color: white;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
     flex: 33%;
-    max-width: 35%; /* limited the 3rd column at 33% for some reason */
+    max-width: 33%; /* limited the 3rd column at 33% for some reason */
     padding: 0 4px;
 }
 
@@ -24,6 +28,11 @@
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.column img:hover {
+    transform: scale(1.020); /* Enlarge the element on hover */
 }
 
 .column video {
@@ -31,6 +40,14 @@
     vertical-align: middle;
     width: 100%;
 }
+
+.img {
+    margin-left: 20px;
+}
+
+
+
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
