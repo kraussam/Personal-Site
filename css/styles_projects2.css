@@ -13,36 +13,102 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    margin-left: 4px;
+    margin-right: 2px;
     background-color: white;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
     flex: 33%;
-    max-width: 33%; /* limited the 3rd column at 33% for some reason */
-    padding: 0 4px;
+    max-width: 33.33%; /* limited the 3rd column at 33% for some reason */
+    padding: 0px 4px;
 }
 
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    transition: filter 0.3s ease; /* Add a smooth transition effect */
+}
+
+.column img {
+    transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 .column img:hover {
-    transform: scale(1.020); /* Enlarge the element on hover */
+    filter: brightness(0.8) contrast(1.8) saturate(1.5) sepia(40%); /* Adjust the values as needed */
+    opacity: 0.9; /* Adjust the opacity value as needed */
 }
+
+.img-container {
+    position: relative;
+    display: inline-block; /* Ensure inline-block for positioning */
+}
+
+.social-item {
+    position: absolute;
+    top: 8px; /* Adjust the top position as needed */
+    right: 8px; /* Adjust the right position as needed */
+    z-index: 1; /* Ensure the icon appears above other content */
+}
+
+.caption-link {
+    position: relative;
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the color from the parent */
+    display: inline-block; /* Make the link fill the content size */
+}
+
+.link-button {
+    position: absolute;
+    top: 8px; /* Adjust the top position as needed */
+    right: 8px; /* Adjust the right position as needed */
+    background-color: #007BFF; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    padding: 8px 12px; /* Adjust padding as needed */
+    border-radius: 4px; /* Add rounded corners if desired */
+    cursor: pointer;
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Adjust the hover background color as needed */
+}
+
+
+
+
 
 .column video {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
 }
-
 .img {
     margin-left: 20px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.caption-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity */
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s; /* Updated transition property */
+}
+
+.img-container:hover .caption-text {
+    visibility: visible;
+    opacity: 1;
 }
 
 
